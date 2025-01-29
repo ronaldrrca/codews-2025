@@ -127,10 +127,12 @@ nav{
 
 h1{
     font-size: 3rem;
+    text-align: center;
 }
 
 .hero-content p{
     font-size: 2rem;
+    margin-top: 2rem;
 }
 
 #cta-button{
@@ -148,6 +150,66 @@ h1{
     background-color: #02838C;    
 }
 
+#servicios {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    /* color: #EEEEEE; */
+}
+
+.servicio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    background-color: #393E46; /* Fondo de cada servicio */
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.servicio p{
+    font-size: 1.6rem;
+    color: #EEEEEE;
+}
+
+#servicios h2{
+    width: 100%;
+    font-size: 2rem;
+    color: #00ADB5;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem; 
+    font-weight: bold; 
+}
+
+.servicio h3 {
+    font-size: 1.6rem;
+    color: #00ADB5;
+    margin-bottom: 0.5rem;
+}
+
+.servicio a{
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    /* padding: 1rem; */
+    color: #00ADB5;
+    transition: color 0.3s;
+}
+
+.servicio a:hover{
+    color: #FFFFFF;
+}
+
 
 
 
@@ -158,6 +220,23 @@ Textos: Gris claro (#EEEEEE) para asegurar contraste y legibilidad.
 Botones y Elementos Destacados, header: Verde azulado (#00ADB5) para llamadas a la acción.
 
 */
+
+@media screen and (min-width: 768px){
+    .servicio{
+        width: 48%;
+        padding: 1.5rem;
+    }
+
+    #servicios h2{
+        text-align: center;  
+        font-size: 2.2rem;
+    }
+
+    .servicio h3 {
+        font-size: 1.8rem;
+    }
+    
+}
 
 @media screen and (min-width: 1300px) {
     #icono_menu, #icono_cerrar_menu{
@@ -182,6 +261,10 @@ Botones y Elementos Destacados, header: Verde azulado (#00ADB5) para llamadas a 
 
     header{
         padding-left: 4rem;
+    }
+
+    .servicio{
+        padding: 2rem;
     }
 
 }
