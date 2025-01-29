@@ -1,0 +1,187 @@
+/* Reset de estilos para consistencia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    position: relative;
+}
+
+main{
+    max-width: 150rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 6rem;
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    background-color: #333;
+    color: #FFF;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 150rem;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: #00ADB5;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 6rem;
+}
+
+.item_dropDown_menu{
+    width: 100%;
+    display: flex;
+    padding: 1.2rem 0;
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+    justify-content: center;
+}
+
+.item_dropDown_menu:hover{
+    color: #222831;
+}
+
+.dropDown_menu{
+    width: 100%;
+    max-width: 90rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3.5rem 0;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #02838C;
+}
+
+.dropDown_menu li{
+    width: 100%;
+}
+
+#icono_cerrar_menu{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#icono_menu, #icono_cerrar_menu{
+    width: 3rem;
+}
+
+#logo{
+    width: 12rem;
+}
+
+#inicio{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.hero-content h1, .hero-content p{
+    color: #EEEEEE;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+.hero-content p{
+    font-size: 2rem;
+}
+
+#cta-button{
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 3rem;
+    font-size: 2rem;
+    background-color: #00ADB5;
+    color: #FFFFFF;
+}
+
+#cta-button:hover{
+    transition: all 0.3s;
+    background-color: #02838C;    
+}
+
+
+
+
+
+/*
+Fondo General: Negro carbón (#222831) para el fondo principal.
+Textos: Gris claro (#EEEEEE) para asegurar contraste y legibilidad.
+Botones y Elementos Destacados, header: Verde azulado (#00ADB5) para llamadas a la acción.
+
+*/
+
+@media screen and (min-width: 1300px) {
+    #icono_menu, #icono_cerrar_menu{
+        display: none;
+    }
+
+    .dropDown_menu{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        position: relative;
+        background-color:transparent;
+    }
+
+    .dropDown_menu li{
+        margin:  0 3rem;
+    }
+
+    .item_dropDown_menu{
+        padding: 1rem;
+    }
+
+    header{
+        padding-left: 4rem;
+    }
+
+}
