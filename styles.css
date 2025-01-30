@@ -20,7 +20,6 @@ main{
     justify-content: center;
     align-items: flex-start;
     margin-top: 6rem;
-    background-color: #222831;
     color: #EEEEEE;
 }
 
@@ -46,6 +45,7 @@ header{
     align-items: center;
     padding: 0 2rem;
     background-color: #00ADB5;
+    z-index: 100;
 }
 
 nav{
@@ -110,7 +110,10 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #222831;
     padding: 3rem;
+    margin-top: 0;
+    gap: 2.5rem;
 }
 
 .hero-content{
@@ -118,7 +121,6 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
 }
 
 .hero-content h1, .hero-content p{
@@ -150,6 +152,11 @@ h1{
     background-color: #02838C;    
 }
 
+section{
+    margin-bottom: 5rem;
+    padding-top: 3rem;
+}
+
 #servicios {
     display: flex;
     flex-wrap: wrap;
@@ -157,9 +164,18 @@ h1{
     justify-content: center;
     gap: 1.5rem;
     width: 100%;
-    padding: 2rem;
+    padding: 3rem 2rem;
     background-color: #FFFFFF;
-    /* color: #EEEEEE; */
+}
+
+#proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 3rem 2rem;
+    background-color: #FFFFFF;
 }
 
 .servicio {
@@ -169,23 +185,29 @@ h1{
     justify-content: center;
     align-items: flex-start;
     position: relative;
-    background-color: #393E46; /* Fondo de cada servicio */
+    background-color: #393E46; 
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-.servicio p{
+.servicio p, #proyectos p{
     font-size: 1.6rem;
+}
+
+.servicio p{
     color: #EEEEEE;
 }
 
-#servicios h2{
+#proyectos p{
+    color: #666666;
+}
+
+#servicios h2, #proyectos h2{
     width: 100%;
+    margin-bottom: 2rem;
     font-size: 2rem;
     color: #00ADB5;
-    margin-top: 3rem;
-    margin-bottom: 0.5rem; 
     font-weight: bold; 
 }
 
@@ -201,7 +223,6 @@ h1{
     bottom: 1rem;
     right: 2rem;
     font-size: 1.5rem;
-    /* padding: 1rem; */
     color: #00ADB5;
     transition: color 0.3s;
 }
@@ -210,6 +231,23 @@ h1{
     color: #FFFFFF;
 }
 
+#galeria-proyectos-inicio{
+    width: 100%;
+    max-width: 130rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+.proyecto-inicio{
+    width: 30rem;
+    height: 35rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
 
 
 
@@ -227,13 +265,21 @@ Botones y Elementos Destacados, header: Verde azulado (#00ADB5) para llamadas a 
         padding: 1.5rem;
     }
 
-    #servicios h2{
+    #servicios h2, #proyectos h2{
         text-align: center;  
         font-size: 2.2rem;
     }
 
     .servicio h3 {
         font-size: 1.8rem;
+    }
+
+    .proyecto-inicio{
+        width: 25rem;
+    }
+
+    #galeria-proyectos-inicio{
+        gap: 5rem;        
     }
     
 }
@@ -265,6 +311,15 @@ Botones y Elementos Destacados, header: Verde azulado (#00ADB5) para llamadas a 
 
     .servicio{
         padding: 2rem;
+    }
+
+    #galeria-proyectos-inicio{
+        gap: 0;        
+    }
+
+    .proyecto-inicio{
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
 }

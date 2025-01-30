@@ -11,7 +11,7 @@
                 <source srcset="./img/imagen-principal-pc.png" media="(min-width: 1200px)">
                 <source srcset="./img/imagen-principal-tablet.png" media="(min-width: 768px)">
                 <source srcset="./img/imagen-principal-movil.png" media="(min-width: 400px)">
-                <img src="./img//imagen-principal.png" alt="Imagen de varias páginas web alineadas verticalmente">
+                <img src="./img/imagen-principal.png" alt="Imagen de varias páginas web alineadas verticalmente">
               </picture>
               
             <div class="hero-content">
@@ -51,9 +51,36 @@
     
         <section id="proyectos">
             <h2>Proyectos</h2>
-            <p>Explora algunos de los proyectos que he desarrollado para otros clientes.</p>
-            <div id="galeria-proyectos">
-                <!--Incluir capturas o enlaces a proyectos anteriores-->  
+            <p>Explora algunos de los proyectos que he desarrollado.</p>
+            <div id="galeria-proyectos-inicio">
+                <div class="proyecto-inicio">
+                <picture>
+                    <source srcset="./img/placeholder-imagen-250x1000.png" media="(min-width: 768px)">
+                    <source srcset="./img/placeholder-imagen-300x1000.png" media="(min-width: 400px)">
+                    <img src="./img/placeholder-imagen-300x1000.png" alt="Imagen de páginas web de diferentes proyectos">
+              </picture>
+                </div>
+                <div class="proyecto-inicio">
+                <picture>
+                    <source srcset="./img/placeholder-imagen-250x1000.png" media="(min-width: 768px)">
+                    <source srcset="./img/placeholder-imagen-300x1000.png" media="(min-width: 400px)">
+                    <img src="./img/placeholder-imagen-300x1000.png" alt="Imagen de páginas web de diferentes proyectos">
+              </picture>
+                </div>
+                <div class="proyecto-inicio">
+                <picture>
+                    <source srcset="./img/placeholder-imagen-250x1000.png" media="(min-width: 768px)">
+                    <source srcset="./img/placeholder-imagen-300x1000.png" media="(min-width: 400px)">
+                    <img src="./img/placeholder-imagen-300x1000.png" alt="Imagen de páginas web de diferentes proyectos">
+              </picture>
+                </div>
+                <div class="proyecto-inicio">
+                <picture>
+                    <source srcset="./img/placeholder-imagen-250x1000.png" media="(min-width: 768px)">
+                    <source srcset="./img/placeholder-imagen-300x1000.png" media="(min-width: 400px)">
+                    <img src="./img/placeholder-imagen-300x1000.png" alt="Imagen de páginas web de diferentes proyectos">
+              </picture>
+                </div>  
             </div>
         </section>
     
@@ -62,15 +89,15 @@
             <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
             <form id="form-contacto">
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
     
                 <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required placeholder="Email">
     
                 <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
+                <textarea id="mensaje" name="mensaje" required placeholder="Ingresa tu mensaje"></textarea>
     
-                <button type="submit">Enviar</button>
+                <button type="submit" aria-label="">Enviar</button>
             </form>
         </section>
     </main>
