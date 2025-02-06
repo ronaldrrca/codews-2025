@@ -10,6 +10,6 @@
     <main>
     <h1>Proyectos</h1>
     </main>
-    <script src="scripts.js"></script>
+    <script src="./js/header.js"></script>
 </body>
 </html>

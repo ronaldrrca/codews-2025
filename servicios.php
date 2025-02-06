@@ -8,6 +8,6 @@
         <?php include './header.php'; ?>
     </header>
     <h1>Servicios</h1>
-    <script src="scripts.js"></script>
+    <script src="./js/header.js"></script>
 </body>
 </html>

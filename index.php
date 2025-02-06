@@ -120,6 +120,7 @@
         <p>Sígueme en: <a href="#">Instagram</a></p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
