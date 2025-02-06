@@ -1,11 +1,15 @@
-<?php include './header.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
 </head>
 <body>
+    <header>
+        <?php include './header.php'; ?>
+    </header>
     <main>
+        <!-- Capa de Superposición para bloquear la interacción -->
+        <div id="overlay"></div>
         <section id="inicio" class="hero">
             <picture>
                 <source srcset="./img/imagen-principal-pc.png" media="(min-width: 1200px)">
@@ -54,59 +58,66 @@
             <p>Explora algunos de los proyectos que he desarrollado.</p>
             <div id="galeria-proyectos-inicio">
                 <div class="proyecto-inicio">
-                <picture>
-                    <source srcset="./img/placeholder-imagen-250x1000.png" media="(min-width: 768px)">
-                    <source srcset="./img/placeholder-imagen-300x1000.png" media="(min-width: 400px)">
-                    <img src="./img/placeholder-imagen-300x1000.png" alt="Imagen de páginas web de diferentes proyectos">
-              </picture>
+                    <picture>
+                        <source srcset="./img/placeholder-imagen-250x1000.png" media="(min-width: 768px)">
+                        <source srcset="./img/placeholder-imagen-300x1000.png" media="(min-width: 400px)">
+                        <img src="./img/placeholder-imagen-300x1000.png" alt="Imagen de páginas web de diferentes proyectos">
+                    </picture>
                 </div>
                 <div class="proyecto-inicio">
-                <picture>
-                    <source srcset="./img/placeholder-imagen-250x1000.png" media="(min-width: 768px)">
-                    <source srcset="./img/placeholder-imagen-300x1000.png" media="(min-width: 400px)">
-                    <img src="./img/placeholder-imagen-300x1000.png" alt="Imagen de páginas web de diferentes proyectos">
-              </picture>
+                    <picture>
+                        <source srcset="./img/placeholder-imagen-250x1000.png" media="(min-width: 768px)">
+                        <source srcset="./img/placeholder-imagen-300x1000.png" media="(min-width: 400px)">
+                        <img src="./img/placeholder-imagen-300x1000.png" alt="Imagen de páginas web de diferentes proyectos">
+                    </picture>
                 </div>
                 <div class="proyecto-inicio">
-                <picture>
-                    <source srcset="./img/placeholder-imagen-250x1000.png" media="(min-width: 768px)">
-                    <source srcset="./img/placeholder-imagen-300x1000.png" media="(min-width: 400px)">
-                    <img src="./img/placeholder-imagen-300x1000.png" alt="Imagen de páginas web de diferentes proyectos">
-              </picture>
+                    <picture>
+                        <source srcset="./img/placeholder-imagen-250x1000.png" media="(min-width: 768px)">
+                        <source srcset="./img/placeholder-imagen-300x1000.png" media="(min-width: 400px)">
+                        <img src="./img/placeholder-imagen-300x1000.png" alt="Imagen de páginas web de diferentes proyectos">
+                    </picture>
                 </div>
                 <div class="proyecto-inicio">
-                <picture>
-                    <source srcset="./img/placeholder-imagen-250x1000.png" media="(min-width: 768px)">
-                    <source srcset="./img/placeholder-imagen-300x1000.png" media="(min-width: 400px)">
-                    <img src="./img/placeholder-imagen-300x1000.png" alt="Imagen de páginas web de diferentes proyectos">
-              </picture>
+                    <picture>
+                        <source srcset="./img/placeholder-imagen-250x1000.png" media="(min-width: 768px)">
+                        <source srcset="./img/placeholder-imagen-300x1000.png" media="(min-width: 400px)">
+                        <img src="./img/placeholder-imagen-300x1000.png" alt="Imagen de páginas web de diferentes proyectos">
+                    </picture>
                 </div>  
             </div>
         </section>
     
         <section id="contacto">
             <h2>Contacto</h2>
-            <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            <span>¿Tienes un proyecto en mente? ¡Hablemos!</span>
             <form id="form-contacto">
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
     
                 <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required placeholder="Email">
+                <input type="email" id="email" name="email" placeholder="Email">
     
                 <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required placeholder="Ingresa tu mensaje"></textarea>
+                <textarea id="mensaje" maxlength="200" name="mensaje" placeholder="Ingresa tu mensaje"></textarea>
     
                 <button type="submit" aria-label="">Enviar</button>
             </form>
+            <span id="contador_carcteres_contacto">200 caracteres restantes</span>
+            <!-- Modal -->
+            <div id="modal">
+                <div id="modalContenido">
+                    <h2 id="modal_encabezado"></h2>
+                    <p id="modalMensaje"></p>
+                    <button onclick="cerrarModal()">Cerrar</button>
+                </div>
+            </div>
         </section>
     </main>
 
-    
-
     <footer>
-        <p>&copy; 2025 Ronald. Todos los derechos reservados.</p>
-        <p>Sígueme en: <a href="#">Instagram</a> | <a href="#">LinkedIn</a></p>
+        <p>&copy; 2025 CODEWS. Todos los derechos reservados.</p>
+        <p>Sígueme en: <a href="#">Instagram</a></p>
     </footer>
 
     <script src="scripts.js"></script>
