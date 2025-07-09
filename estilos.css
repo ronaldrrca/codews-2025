@@ -15,3 +15,118 @@ main {
     max-width: 150rem;
     background-color: #FFFFFF;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 7rem;
+    padding: 0 2rem;
+    position: relative;
+    background-color: #181C1F;
+}
+
+#logo_header {
+    font-size: 3rem;
+    color: #FFFFFF;
+}
+
+#icono_menu_header {
+    width: 4rem;
+}
+
+#icono_cerrarMenu_header {
+    width: 3rem;
+    display: none;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    /* display: none; */
+    justify-content: center;
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:#FFFFFF;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu li {
+    list-style: none;
+    text-align: center;
+}
+
+#menu li a {
+    display: inline-flex;
+    padding: 1rem;
+    color: #181C1F;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+nav.mostrar {
+  opacity: 1;
+  visibility: visible;
+}
+
+#icono_cerrarMenu_header.mostrar {
+  display: block;
+}
+
+#icono_menu_header.ocultar {
+  display: none;
+}
+
+
+
+@media (min-width: 576px) { /* Teléfonos grandes */ }
+@media (min-width: 768px) { /* Tablets */ 
+
+    header {
+        padding: 0 4rem;
+    }
+
+    .icono_menu {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #menu {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    nav {
+        opacity: 1;
+        visibility: visible;
+        background-color: #181C1F;
+        width: auto;
+        position: static;
+        box-shadow: none;
+    }
+
+    #menu li a {
+        padding: 0.5rem;
+        transition: color 0.3s;
+        color: #FFFFFF;
+    }
+
+    #menu li a:hover {
+        color: #00BCD4;
+    }
+}
+@media (min-width: 992px) { /* Laptops */ }
+@media (min-width: 1200px) { /* Escritorios */ }
+@media (min-width: 1400px) { /* Escritorios grandes */ }
