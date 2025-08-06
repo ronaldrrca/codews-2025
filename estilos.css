@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -27,9 +29,17 @@ header {
     background-color: #181C1F;
 }
 
+h1 {
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: "Playfair", serif;
+    font-weight: bold;
+}
+
 #logo_header {
-    font-size: 3rem;
-    color: #FFFFFF;
+    width: 18rem;
 }
 
 #icono_menu_header {
@@ -46,7 +56,6 @@ nav {
     position: absolute;
     right: 0;
     top: 100%;
-    /* display: none; */
     justify-content: center;
     padding: 1rem 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -88,6 +97,47 @@ nav.mostrar {
   display: none;
 }
 
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+#img_principal_hero {
+    width: 100%;
+    max-width: 70rem;
+}
+
+#texto_hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#texto_hero_principal {
+    font-family: "lato", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #0000008C;
+
+    
+}
+
+#texto_hero_secundario {
+    font-family: "lato", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #0000008C;
+}
 
 
 @media (min-width: 576px) { /* Teléfonos grandes */ }
@@ -126,7 +176,23 @@ nav.mostrar {
     #menu li a:hover {
         color: #00BCD4;
     }
+
+    
+
 }
-@media (min-width: 992px) { /* Laptops */ }
-@media (min-width: 1200px) { /* Escritorios */ }
+
+@media (min-width: 992px) { /* Laptops */ 
+   #hero {
+        flex-direction: row;
+        gap: 5rem;
+    }
+
+    
+}
+
+@media (min-width: 1200px) { /* Escritorios */ 
+    
+
+   
+}
 @media (min-width: 1400px) { /* Escritorios grandes */ }
